@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmation page</title>
+</head>
+<body>
+   <h2 class="text-center my-3">Academic Edge List Of Student</h2>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>S NO.</th>
+                                <th>S ID.</th>
+                                <th>NAME</th>
+                                <th>FATHERS NAME</th>
+                                <th>DOB</th>
+                                <th>EMAIL ID</th>
+                                <th>PHONE NO</th>
+                                <th>CITY </th>
+                                <th>GENDER</th>
+                                <th>PAYMENT MODE</th>
+                                <th>CARD NO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for s in alldata %}
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td>{{s.id}}</td>
+                                <td>{{s.name}}</td>
+                                <td>{{s.fname}}</td>
+                                <td>{{s.dob}}</td>
+                                <td>{{s.email}}</td>
+                                <td>{{s.phone}}</td>
+                                <td>{{s.city}}</td>
+                                <td>{{s.gender}}</td>
+                                <td>{{s.pay_mode}}</td>
+                                <td>{{s.card_no}}</td>
+                                <td>
+                                    <a href="/delete/{{s.id}}" class="btn btn-danger md-sm mb-3">Delete</a>
+                                    <a href="/update/{{s.id}}" class="btn btn-success md-sm">Update</a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+  
+</body>
+</html>

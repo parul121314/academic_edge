@@ -1,0 +1,72 @@
+{% load static %}
+{% include "head.html" %}
+            
+    <!-- home -->
+    <section id="about_home">
+        <h2>Enroll Our Popular Courses And Skill Up</h2>
+    </section>
+    <section id="course-inner">
+        <div class="overview">
+            <img  class="course-img" src=" {% static 'assets/images/course6.jpg' %}" alt="image not found">
+            <div class="course-head">
+                <div class="course-name">
+                    <h2>Python Beginner Course</h2>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <p>python is too demanding nowadays..for level up your<br> python skills enroll here </p>
+                </div>
+                <span>$78.51</span>
+            </div>
+            <h3>Instructor</h3>
+            <div class="tutor">
+                <img src=" {% static 'assets/images/aboutimg2.jpeg' %}" alt="image not found">
+                <div class="tutor-details">
+                    <h5>Heily Watson</h5>
+                    <p>Web Devloper At GOOGLE</p>
+                </div>
+            </div>
+            <hr>
+            <h3>Course Overview</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam numquam iusto blanditiis, quis ut ipsum officia soluta qui minus doloremque ea asperiores distinctio ipsa totam repudiandae accusamus esse. Placeat, blanditiis. Distinctio est, error excepturi ut iure illo labore cum quis saepe voluptatem? Dolor minus eveniet quos quaerat? Sint excepturi asperiores maxime.<br><br> Rem ut explicabo ex. Quasi sit quibusdam unde nostrum exercitationem facilis nesciunt, harum culpa! Quos ducimus sed vitae odio! Reiciendis animi praesentium, facilis eius ipsum hic odio saepe perferendis expedita dolorem ullam ex, exercitationem obcaecati eveniet iusto minima sapiente recusandae nam tenetur cum! Reprehenderit excepturi consequatur sequi, quae fuga architecto accusantium ullam nam repellat amet <br><br>beatae quia assumenda tempora quis expedita ea eum commodi. Minima quidem nulla quia dolore deleniti perspiciatis, omnis cum. Dignissimos, voluptas ipsa! Repellendus, minus sunt a tempore quam, illum corrupti, quia doloremque optio omnis repudiandae vel laudantium sequi aliquam consequatur id! Nesciunt distinctio quia architecto in voluptatum incidunt, officiis ipsum expedita nemo veniam sequi reprehenderit debitis maxime magnam eveniet suscipit ipsa illo, consequuntur amet perferendis ratione quo<br><br> deleniti? Quae odit repellendus hic perferendis est, commodi assumenda veritatis deleniti earum possimus, laborum, eligendi suscipit? Quas qui dolore rerum porro vel tempora molestiae ducimus culpa, reiciendis non.</p>
+            <hr>
+            <h3>What you'll learn</h3>
+            <div class="learn">
+                <p><i class="fa fa-check-circle"></i>python from scratch-begginer to advance</p>
+                <p><i class="fa fa-check-circle"></i>Everything you need to become a python experts </p>
+                <p><i class="fa fa-check-circle"></i>All about variables,functions dictonaries and tuples</p>
+                <p><i class="fa fa-check-circle"></i>All core features and connects you need to know in python developent</p>
+                <p><i class="fa fa-check-circle"></i>Project driven learning</p>
+                <p><i class="fa fa-check-circle"></i>object oriented programming</p>
+            </div>
+        </div>
+        <div class="enroll">
+            <h5>this course includes</h5>
+            <p><i class="fa fa-video-camera"></i>52 hours video</p>
+                <p><i class="fa fa-newspaper-o"></i>65 articles</p>
+                <p><i class="fa fa-cloud-download"></i>Downloadable resourses</p>
+                <p><i class="fa fa-mobile-phone"></i>access on mobile and tv</p>
+                <p><i class="fa fa-paperclip"></i>assignment</p>
+                <p><i class="fa fa-trophy"></i>certification of completion</p>
+                <div class="enroll-btn">
+                    <a class="blue" href="/enroll">Enroll Course</a>
+                </div>
+        </div>
+    </section>
+{% include "footer.html" %}
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+        
+    </script>
+</body>
+</html>
