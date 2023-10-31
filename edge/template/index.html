@@ -180,14 +180,14 @@
             </div>
             <div class="col-xl-2 col-lg-0"></div>
             <div class="col-xl-4 col-lg-6 mt-lg-0 mt-5">
-                <form method="POST" class="d-flex flex-column p-5 mx-4" >
+                <form method="POST" class="d-flex flex-column p-5 mx-4">
                     <h4>Create Free Account Here</h4>
                     {% csrf_token %}
-                    <input type="text" name="name" placeholder="Name" class="form-control form-control-lg" required >
+                    <input type="text" name="name" placeholder="Name" class="form-control form-control-lg" required>
                     <input type="text" name="email" placeholder="Email Address" class="form-control form-control-lg" required>
                     <input type="text" name="phone" placeholder="Phone No" class="form-control form-control-lg" required>
                     <div>
-                        <button type="submit" class="btn btn-lg">View Courses</button>
+                        <button type="submit" class="btn btn-lg">SUBMIT FORM</button>
                     </div>
                 </form>
 
@@ -236,7 +236,7 @@
     <p>replan your goal with our exprts advice and choose the path fit best for you</p>
     <div class="experts_box">
         <div class="profiles">
-            <img src="{% static 'assets/images/profile1.jpg' %} " alt="img not found">
+            <img src="{% static "assets/images/profile1.jpg"%}" alt="img not found">
             <h4>Malik Watson</h4>
             <p>python and algorithm expert</p>
             <div class="pro_link">
@@ -246,7 +246,7 @@
             </div>
         </div>
         <div class="profiles">
-            <img src="{% static  'assets/images/profile2.jpg' %}" alt="img not found">
+            <img src="{% static "assets/images/profile2.jpg"%}" alt="img not found">
             <h4>Ema Irik</h4>
             <p>data design expert</p>
             <div class="pro_link">
@@ -256,7 +256,7 @@
             </div>
         </div>
         <div class="profiles">
-            <img src="{% static 'assets/images/profile3.jpg' %}" alt="img not found">
+            <img src="{% static "assets/images/profile3.jpg"%}" alt="img not found">
             <h4>Rebel Kim</h4>
             <p>cyber security expert</p>
             <div class="pro_link">
@@ -266,7 +266,7 @@
             </div>
         </div>
         <div class="profiles">
-            <img src="{% static  'assets/images/progfile4.jpg' %}" alt="img not found">
+            <img src="{% static "assets/images/progfile4.jpg"%}" alt="img not found">
             <h4>Rihana</h4>
             <p>full stack expert</p>
             <div class="pro_link">
@@ -287,6 +287,5 @@
     $('#menu-close').click(function () {
         $('nav .navigation ul').removeClass('active')
     });
-    
 
 </script>
